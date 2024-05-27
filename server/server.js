@@ -11,6 +11,7 @@ const serverConfig = {
    cert: fs.readFileSync('cert.pem'),
 };
 
+
 //all connected to the server users 
 var users = {};
 var allUsers = [];
