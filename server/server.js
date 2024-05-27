@@ -31,7 +31,7 @@ const handleRequest = function(request, response) {
   }
 };
 
-const httpsServer = https.createServer(serverConfig, handleRequest).listen(8000);
+const httpsServer = https.createServer(serverConfig, handleRequest).listen(80);
 
 // ----------------------------------------------------------------------------------------
 
