@@ -83,10 +83,10 @@ let handleHttp = (request, response)=>{
   }
 }
 
-
+/*
 var httpServer = http.createServer(handleHttp);
 httpServer.listen(8081);
-
+*/
 
 const httpsServer = https.createServer(serverConfig, handleHttp);
 httpsServer.listen(8443);
