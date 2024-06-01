@@ -81,6 +81,14 @@ let handleHttp = (request, response)=>{
       response.writeHead(200, {'Content-Type': 'application/javascript'});
       response.end(fs.readFileSync(__dirname+'/client/webrtc.js'));
   }
+  else
+   {
+	response.writeHead(200, {'Content-Type': 'text/plain'});
+    	var message = 'It works!\n',
+        version = request.url,
+        res = [message, version].join('\n');
+    	response.end(res);
+    }	
 }
 
 
