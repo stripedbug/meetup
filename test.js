@@ -53,8 +53,8 @@ app.get('/*', function (req, res) {
 
 
 const serverConfig = {
-   key: fs.readFileSync(__dirname+'/key.pem'),
-   cert: fs.readFileSync(__dirname+'/cert.pem'),
+   key: fs.readFileSync(__dirname+'/c6031_73bc5_df79cedd80388b3e2e675afb4134b13e.key'),
+   cert: fs.readFileSync(__dirname+'/oasis40_com_c6031_73bc5_1721707178_96f62283d41724483f115dcb6675426c.crt'),
 };
 
 
