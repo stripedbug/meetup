@@ -98,7 +98,7 @@ httpServer.listen(8081);
 */
 
 const httpsServer = https.createServer(serverConfig, handleHttp);
-httpsServer.listen(8443);
+
 
 
 var users = {};
@@ -107,7 +107,7 @@ var allUsers = [];
 
 
 // Create a server for handling websocket calls
-const wss = new WebSocketServer({server: httpsServer});
+const wss = new WebSocketServer({httpsServer});
 
 const generateId = () =>
 {
@@ -318,6 +318,6 @@ function resetLeavedOnes()
 }
 
 
-
+httpsServer.listen(8443);
 
 
