@@ -6,7 +6,7 @@ const path = require('path');
 const WebSocket = require('ws');
 const WebSocketServer = WebSocket.Server;
 
-
+console.log("here we go")
 
 /*
 
@@ -83,10 +83,10 @@ let handleHttp = (request, response)=>{
   }
 }
 
-/*
+
 var httpServer = http.createServer(handleHttp);
 httpServer.listen(8081);
-*/
+
 
 const httpsServer = https.createServer(serverConfig, handleHttp);
 httpsServer.listen(8443);
