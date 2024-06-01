@@ -107,7 +107,7 @@ var allUsers = [];
 
 
 // Create a server for handling websocket calls
-const wss = new WebSocketServer({httpsServer});
+const wss = new WebSocketServer({server: httpsServer});
 
 const generateId = () =>
 {
